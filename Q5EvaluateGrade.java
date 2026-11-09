@@ -1,6 +1,6 @@
 public class Q5EvaluateGrade {
     public static void main(String[] args) {
-        String grade = "A";
+        String grade = "a".toUpperCase();
         switch (grade) {
             case "A" : 
                 System.out.println("Excellent! First Class!"); break;
@@ -12,6 +12,8 @@ public class Q5EvaluateGrade {
                 System.out.println("Satisfactory - Barely Pass"); break;
             case "F" : 
                 System.out.println("Fail"); break;
-        }
+            default :
+                System.out.println("Invalid Input.");
+        } 
     }
 }
